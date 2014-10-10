@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommonResources", "CommonRe
 		CommonResources\readme.md = CommonResources\readme.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreeterTSwInterface", "GreeterTSwInterface\GreeterTSwInterface.csproj", "{5678E4F7-EB72-4E29-96D5-E770DE9E85C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{20519B84-051A-4B2B-9D01-40BA1A905D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20519B84-051A-4B2B-9D01-40BA1A905D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20519B84-051A-4B2B-9D01-40BA1A905D4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5678E4F7-EB72-4E29-96D5-E770DE9E85C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5678E4F7-EB72-4E29-96D5-E770DE9E85C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5678E4F7-EB72-4E29-96D5-E770DE9E85C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5678E4F7-EB72-4E29-96D5-E770DE9E85C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
