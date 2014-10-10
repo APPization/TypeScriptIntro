@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommonResources", "CommonResources", "{B01E380E-C607-4E2F-836F-62A4E83B21D7}"
 	ProjectSection(SolutionItems) = preProject
 		CommonResources\app.css = CommonResources\app.css
+		readme.md = readme.md
 	EndProjectSection
 EndProject
 Global
