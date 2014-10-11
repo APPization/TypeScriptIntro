@@ -1,6 +1,8 @@
 ﻿class Student {
     constructor(public firstname: string, public lastname: string) {
     }
+//comment out fullname() and see the mismatch error due to duck typing
+//You don't have to explicitly implement an interface
     fullname(){
         return this.firstname + " " + this.lastname;    
     }
