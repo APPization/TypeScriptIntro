@@ -7,7 +7,7 @@ Greeter.prototype.greet = function () {
 }
 
 //Example of simple errors not catched when working with JS
-var greeter = new Greeter({ audience: "Code Campers" });
+var greeter = new Greeter({ audience: "Wolters Kluwer" });
 
 var greetDiv = document.createElement("div");
 greetDiv.innerHTML = greeter.greet();
