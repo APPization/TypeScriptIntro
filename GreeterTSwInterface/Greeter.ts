@@ -1,30 +1,32 @@
-﻿module School {
-// [[1]] try as is without implements;
+﻿// [[1]] try as is without implements;
 //       duck typing
-// [[2]] addd
+// [[2]] add 
 // implements Person
-    export class Student{
-        constructor(public firstname: string, public lastname: string) {
-        }
+class Student {
+    constructor(public firstname: string, public lastname: string) {
+    }
 
-//comment out fullname() and see the mismatch error due to duck typing
+// [[3]] comment out fullname() and see the mismatch error due to duck typing
 //You don't have to explicitly implement an interface
-        fullname() {
-            return this.firstname + " " + this.lastname;
-        }
-    }
-
-    export interface Person {
-        firstname: string;
-        lastname: string;
-        fullname();
+    fullname() {
+        return this.firstname + " " + this.lastname;
     }
 }
 
-function greet(person: School.Person) {
-    return "Hello, " + person.fullname();
+interface Person {
+    firstname: string;
+    lastname: string;
+    fullname(title?: string);
 }
 
-var user = new School.Student("Jane", "Smith");
 
-document.body.innerHTML = greet(user);
+function greet(person: Person, title?: string) { //Optional params can only be followed by optional, Person can not be 2nd here.
+    return "Hello, " + (title ? title : "") + person.fullname();
+}
+
+var user = new Student("Jane", "Smith");
+
+// [[4]] The DOM elements has intellisense
+// demo fixing the error:
+//document.getElementById("content").innerHTML = greet(user);
+document.body.innerHTML = greet(user, "Ms ");
