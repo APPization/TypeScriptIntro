@@ -1,6 +1,6 @@
 ﻿/// <reference path="school.ts" />
 
-var user = new School.Student("Jane", "Smith");
+var user = new CompanyName.Foundation.School.Student("Jane", "Smith");
 
-document.getElementById("content").innerHTML = School.greet(user);
+document.getElementById("content").innerHTML = CompanyName.Foundation.School.greet(user);
 

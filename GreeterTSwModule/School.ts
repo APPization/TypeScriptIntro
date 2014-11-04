@@ -1,10 +1,13 @@
-﻿module School {
+﻿// [[1]]  You can have namespace hierarhies.
+// Look at the converted js, 
+//      - see the idiomatic JS that is used to achieve it! 
+//          - It was handcoded before
+//          - 9 lines to 1 line
+module CompanyName.Foundation.School {
     export class Student implements IPerson{
         constructor(public firstname: string, public lastname: string) {
         }
 
-        // [[3]] comment out fullname() and see the mismatch error due to duck typing
-        //You don't have to explicitly implement an interface
         fullname() {
             return this.firstname + " " + this.lastname;
         }
